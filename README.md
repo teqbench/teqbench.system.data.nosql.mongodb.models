@@ -1,4 +1,4 @@
-# Trading Toolbox - System Data NoSql MongoDB Models
+# System MongoDB Models
 
 ## Overview
 Concrete implementation of the base document found in TradingToolbox.System.Data.NoSql.Models for MongoDB.
@@ -33,7 +33,7 @@ dotnet add package TradingToolbox.System.Data.NoSql.MongoDB.Models
 
 ## Update Source Code
 > [!NOTE]
-> For complete usage, see TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models
+> For complete usage, see [TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models](https://github.com/trading-toolbox/tradingtoolbox.trading.modeler.data.nosql.mongodb.models)
 
 ```csharp
 using TradingToolbox.System.Data.NoSql.MongoDB.Models;
