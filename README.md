@@ -32,6 +32,9 @@ dotnet add package TradingToolbox.System.Data.NoSql.MongoDB.Models
 ```
 
 ## Update Source Code
+> [!NOTE]
+> For complete usage, see TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models
+
 ```csharp
 using TradingToolbox.System.Data.NoSql.MongoDB.Models;
 
