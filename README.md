@@ -33,7 +33,19 @@ dotnet add package TradingToolbox.System.Data.NoSql.MongoDB.Models
 
 ## Update Source Code
 ```csharp
-To add
+using TradingToolbox.System.Data.NoSql.MongoDB.Models;
+
+namespace TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models
+{
+/// <summary>
+/// Position model document implementation.
+/// </summary>
+[BsonCollection("position-models")]
+public class PositionModelDocument : Document
+{
+    // NOTE: Use the BsonCollection attribute to define the name of the collection and the class
+    // inherits the Document class for the underlying behaviors.
+}
 ```
 
 # DevOps
