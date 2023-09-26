@@ -43,7 +43,8 @@ namespace TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models
 [BsonCollection("position-models")]
 public class PositionModelDocument : Document
 {
-    // NOTE: Use the BsonCollection attribute to define the name of the collection and the class inherits the Document class for the underlying behaviors.
+    // NOTE: Use the BsonCollection attribute to define the name of the collection and the class
+    // inherits the Document class for the underlying behaviors.
 }
 ```
 
