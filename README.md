@@ -22,8 +22,8 @@ Concrete implementation of the base document found in TeqBench.System.Data.NoSql
 > [!NOTE]
 > Referenced/restored via the project file
 
-- MongoDB.Bson, 2.21.0
-- TeqBench.System.Data.NoSql.Models, 5.1.0
+- MongoDB.Bson, 2.22.0
+- TeqBench.System.Data.NoSql.Models, 1.0.0
 
 # Usage
 ## Add NuGet Package To Project
