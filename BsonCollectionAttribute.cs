@@ -1,5 +1,5 @@
 ﻿using System;
-namespace TradingToolbox.System.Data.NoSql.MongoDB.Models
+namespace TeqBench.System.Data.NoSql.MongoDB.Models
 {
     /// <summary>
     /// Attribute to be used by domain model class implementation (i.e. class that implements the Document base
