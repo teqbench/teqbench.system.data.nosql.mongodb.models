@@ -1,7 +1,7 @@
 # System MongoDB Models
 
 ## Overview
-Concrete implementation of the base document found in TradingToolbox.System.Data.NoSql.Models for MongoDB.
+Concrete implementation of the base document found in TeqBench.System.Data.NoSql.Models for MongoDB.
 
 # Contents
 - [Developer Environment Setup](#Developer+Environment+Setup)
@@ -12,7 +12,7 @@ Concrete implementation of the base document found in TradingToolbox.System.Data
 
 # Developer Environment Setup
 > [!NOTE]
-> In order to access the Trading Toolbox's package registry on GitHub, a personal access token needs to be created with the appropriate scopes and Visual Studio configured to use it. See the [Trading Toolbox Organization's README](https://github.com/trading-toolbox) which outlines how to create a PAT and configure Visual Studio to use it.
+> In order to access the TeqBench's package registry on GitHub, a personal access token needs to be created with the appropriate scopes and Visual Studio configured to use it. See the [TeqBench Organization's README](https://github.com/teqbench) which outlines how to create a PAT and configure Visual Studio to use it.
 
 ## Tooling
 - .NET 7.0.x
@@ -23,20 +23,20 @@ Concrete implementation of the base document found in TradingToolbox.System.Data
 > Referenced/restored via the project file
 
 - MongoDB.Bson, 2.21.0
-- TradingToolbox.System.Data.NoSql.Models, 5.1.0
+- TeqBench.System.Data.NoSql.Models, 5.1.0
 
 # Usage
 ## Add NuGet Package To Project
 ```
-dotnet add package TradingToolbox.System.Data.NoSql.MongoDB.Models
+dotnet add package TeqBench.System.Data.NoSql.MongoDB.Models
 ```
 
 ## Update Source Code
 > [!NOTE]
-> For complete usage, see [TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models](https://github.com/trading-toolbox/tradingtoolbox.trading.modeler.data.nosql.mongodb.models)
+> For complete usage, see [TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models](https://github.com/teqbench/tradingtoolbox.trading.modeler.data.nosql.mongodb.models)
 
 ```csharp
-using TradingToolbox.System.Data.NoSql.MongoDB.Models;
+using TeqBench.System.Data.NoSql.MongoDB.Models;
 
 namespace TradingToolbox.Trading.Modeler.Data.NoSql.MongoDB.Models
 {
@@ -58,10 +58,13 @@ public class PositionModelDocument : Document
 - Debug
     - This configuration is used for compilation of releases to development/debug environments.
 
+## Branching Strategy
+- GitHub Flow
+  - [Introduction From GitHub](https://docs.github.com/en/get-started/quickstart/github-flow)
+  - [Indepth Overview](https://githubflow.github.io)
+
 ## Branches
 - main (production)
-- staging (production preview)
-- dev (developer integration)
 
 ## Local - Build, Pack(age) & Deploy
 - To build/pack locally use the "Debug" configuration.
@@ -87,17 +90,17 @@ public class PositionModelDocument : Document
     - Navigate to the project's root folder and issue the command "dotnet pack -c:Debug"
   - Pack Output
     - Pack command output for Visual Studio or command line, i.e. NuGet package file ".0.0.0-dev.nupkg", will be found in the "{project}/bin/Debug/" folder.
-    - Because used the "Debug" configuration, the NuGet package version created is "0.0.0-dev" to communicate this is a NON-PRODUCTION build/package and should only be used for development/debug purposes; it should NEVER be uploaded to the Trading Toolbox organization's package registry on GitHub.
+    - Because used the "Debug" configuration, the NuGet package version created is "0.0.0-dev" to communicate this is a NON-PRODUCTION build/package and should only be used for development/debug purposes; it should NEVER be uploaded to the TeqBench organization's package registry on GitHub.
    
 ### Deployment
 - A local deployment, in effect, is to a local "package source" folder and is configured in Visual Studio at "Visual Studio > Preferences > NuGet > Sources". This is useful when want to test changes to a package before pushing code changes to the project's repository.
 - A locally built NuGet package can be deployed locally by copying the "{assembly-name}.0.0.0-dev.nupkg" to the local NuGet package source (i.e. a local folder) as configured in "Visual Studio > Preferences > NuGet > Sources".
 
 ## Cloud - Build, Pack(age) & Deploy
-- Cloud based build/pack use the "Release" configuration, and currently, ONLY builds from the "main" branch.
-- Cloud based build/pack/deploy use the [Production Release Workflow](https://github.com/trading-toolbox/production-release-workflow/actions/workflows/production-release-workflow.yml) Trading Toolbox Action to build and optionally pack/deploy a NuGet package for a selected project (i.e. repository).
-- If opt to create a NuGet package, the resulting package will be uploaded to the [Trading Toolbox Package Registry](https://github.com/orgs/trading-toolbox/packages) on GitHub.
-- As part of the [Production Release Workflow](https://github.com/trading-toolbox/production-release-workflow/actions/workflows/production-release-workflow.yml) build options, select what type of update the release is, e.g. "Major (Backwards-incompatible functionality added)", "Minor (Backwards-compatible functionality added)", or "Patch/Revision (Bugfixes/updates for a specific release)" to determine how the version number will be updated as part of the build. See [Trading Toolbox Org's README](https://github.com/trading-toolbox#version-numbers-in-trading-toolbox) for more information on version numbers in Trading Toolbox.
+- Cloud based build, pack and deployment requires a pull request and successful merge into the main branch in order to start the release workflow.
+- If opt to create a NuGet package, the resulting package will be uploaded to the [TeqBench Package Registry](https://github.com/orgs/teqbench/packages) on GitHub.
+- As part of the pull request, the "Mergable" option must be set to "PR - Allow merge" in order for the pull request to be merged into the main branch, assuming all other validations pass.
+- As part of the pull request, the "Release Type" option must be specified (e.g. "Major (Backwards-incompatible updates and/or bugfixes)", "Minor (Backwards-compatible updates and bugfixes)", or "Patch (Backwards-compatible bugfixes - ONLY)") to determine how the version number will be updated as part of the build. See [TeqBench Org's README](https://github.com/teqbench#version-numbers-in-teqbench) for more information on version numbers in TeqBench.
 
 # License
-&copy; 2021 Trading Toolbox. All source code in this repository is only allowed for use by Trading Toolbox; other usage by internal or external parties requires written consent from Trading Toolobx.
+&copy; 2021 TeqBench. All source code in this repository is only allowed for use by TeqBench; other usage by internal or external parties requires written consent from TeqBench.

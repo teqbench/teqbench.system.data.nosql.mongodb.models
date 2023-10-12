@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<Authors>Trading Toolbox</Authors>
-		<Company>Trading Toolbox</Company>
-		<Product>Trading Toolbox</Product>
-		<Copyright>Copyright 2023 © Trading Toolbox. All rights reserved.</Copyright>
+		<Authors>TeqBench</Authors>
+		<Company>TeqBench</Company>
+		<Product>TeqBench</Product>
+		<Copyright>Copyright 2023 © TeqBench. All rights reserved.</Copyright>
+		<ReleaseVersion></ReleaseVersion>
 	</PropertyGroup>
 	<PropertyGroup>
 		<Major Condition="'$(major)' == ''">0</Major>
@@ -43,15 +44,12 @@
 		<FileVersion>$(Major).$(Minor).$(Build).$(Revision)</FileVersion>
 	</PropertyGroup>
 	<PropertyGroup>
-		<Description>Concrete implementation of the base document found in TradingToolbox.System.Data.NoSql.Models for MongoDb. This is it's own solution/project separate from TradingToolbox.System.Data.NoSql.MongoDB.Repository because there are instances where do want to reference it but without all the related repository implementation; because of this it drives keeping TradingToolbox.System.Data.NoSql.Models as its own solution/project to keep separate from repository implementation as well.</Description>
-		<RootNamespace>TradingToolbox.System.Data.NoSql.MongoDB.Models</RootNamespace>
-		<AssemblyName>TradingToolbox.System.Data.NoSql.MongoDB.Models</AssemblyName>
+		<Description>Concrete implementation of the base document found in TeqBench.System.Data.NoSql.Models for MongoDb. This is it's own solution/project separate from TeqBench.System.Data.NoSql.MongoDB.Repository because there are instances where do want to reference it but without all the related repository implementation; because of this it drives keeping TeqBench.System.Data.NoSql.Models as its own solution/project to keep separate from repository implementation as well.</Description>
+		<RootNamespace>TeqBench.System.Data.NoSql.MongoDB.Models</RootNamespace>
+		<AssemblyName>TeqBench.System.Data.NoSql.MongoDB.Models</AssemblyName>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="MongoDB.Bson" Version="2.21.0" />
-		<PackageReference Include="TradingToolbox.System.Data.NoSql.Models" Version="5.1.0" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Remove="README.md" />
+		<PackageReference Include="MongoDB.Bson" Version="2.22.0" />
+		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="1.0.0" />
 	</ItemGroup>
 </Project>

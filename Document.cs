@@ -2,7 +2,7 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace TradingToolbox.System.Data.NoSql.MongoDB.Models
+namespace TeqBench.System.Data.NoSql.MongoDB.Models
 {
     /// <summary>
     /// Base (abstract) document implementation for MongoDB repository implementation.
