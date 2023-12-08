@@ -30,7 +30,7 @@
 		<VersionSuffix Condition="'$(Configuration)' == 'Debug'">dev</VersionSuffix>
 	</PropertyGroup>
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<IsPackable>true</IsPackable>
@@ -48,8 +48,16 @@
 		<RootNamespace>TeqBench.System.Data.NoSql.MongoDB.Models</RootNamespace>
 		<AssemblyName>TeqBench.System.Data.NoSql.MongoDB.Models</AssemblyName>
 	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	  <DebugSymbols>true</DebugSymbols>
+	  <DebugType>portable</DebugType>
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="MongoDB.Bson" Version="2.22.0" />
-		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="1.0.0" />
+		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="2.0.0" />
 	</ItemGroup>
 </Project>
