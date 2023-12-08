@@ -58,6 +58,6 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="MongoDB.Bson" Version="2.22.0" />
-		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="2.0.0" />
+		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="2.0.1" />
 	</ItemGroup>
 </Project>
