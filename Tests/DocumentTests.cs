@@ -1,6 +1,5 @@
 ﻿using Moq;
-
-using TeqBench.System.Data.NoSql.MongoDB.Models;
+using TeqBench.System.Data.NoSql.Models;
 
 namespace TeqBench.System.Data.NoSql.MongoDB.Models.Tests;
 
@@ -34,5 +33,33 @@ public class DocumentTests
 
         IDocument doc = mock.Object;
         Assert.AreNotEqual(doc.CreatedAt, DateTime.MinValue);
+    }
+
+    [TestMethod, ExpectedException(typeof(ArgumentException))]
+    public void TestInvalidIdAssignmentNull()
+    {
+        var mock = new Mock<Document>(MockBehavior.Strict);
+        mock.Setup(doc => doc).Throws<ArgumentException>();
+
+        IDocument doc = mock.Object;
+        doc.Id = null;
+    }
+
+    [TestMethod, ExpectedException(typeof(ArgumentException))]
+    public void TestInvalidIdAssignmentEmptyString() {
+        var mock = new Mock<Document>(MockBehavior.Strict);
+        mock.Setup(doc => doc).Throws<ArgumentException>();
+
+        IDocument doc = mock.Object;
+        doc.Id = "";
+    }
+
+    [TestMethod, ExpectedException(typeof(ArgumentException))]
+    public void TestInvalidIdAssignment() {
+        var mock = new Mock<Document>(MockBehavior.Strict);
+        mock.Setup(doc => doc).Throws<ArgumentException>();
+
+        IDocument doc = mock.Object;
+        doc.Id = "Invalid Id";
     }
 }

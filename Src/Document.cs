@@ -1,6 +1,7 @@
 ﻿using System;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TeqBench.System.Data.NoSql.MongoDB.Models
 {
@@ -20,14 +21,8 @@ namespace TeqBench.System.Data.NoSql.MongoDB.Models
         /// <summary>
         /// Create instance of a Document with default property values.
         /// </summary>
-        /// <remarks>
-        /// Explicitly set the Id property to null in the constructor to
-        /// ensure the CreatedAt is initialized appropriately based on the
-        /// value of the Id property.
-        /// </remarks>
-        public Document() : this(null)
+        public Document()
         {
-            this.Id = null;
         }
 
         /// <summary>
@@ -56,10 +51,16 @@ namespace TeqBench.System.Data.NoSql.MongoDB.Models
                 // Do a null check on the value before attempting to trim the supplied value.
                 this._id = value?.Trim();
 
-                // If this._id is null, then set the default value of the CreatedAt property, otherwise, if not null
-                // set the CreatedAt property to the CreationTime of the document as derived from the ObjectId based
-                // on the non-null value of this._id.
-                this.CreatedAt = this._id is null ? DateTime.MinValue : (new ObjectId(this._id)).CreationTime;
+                // If this._id is null or is not a valid Id (i.e. TryParse fails), then 
+                // throw exception
+                if (!ObjectId.TryParse(this._id, out ObjectId objectId))
+                {
+                    throw new ArgumentException("Invalid value for Id.");
+                }
+
+                // If this._id is valid Id (i.e. not null and TryParse is successful), set the CreatedAt property to the
+                // CreationTime as derived from the parsed ObjectId.
+                this.CreatedAt = objectId.CreationTime;
             }
         }
 
