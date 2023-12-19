@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01F7953C-72C5-4767-B72A-5E1C63615D19}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeqBench.System.Data.NoSql.MongoDB.Models.Tests", "Tests\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.csproj", "{0B80983B-7664-4907-8E79-AA7CFA8AE32C}"
