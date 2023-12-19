@@ -57,7 +57,26 @@
 	  <WarningLevel>4</WarningLevel>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="MongoDB.Bson" Version="2.22.0" />
+		<PackageReference Include="MongoDB.Bson" Version="2.23.1" />
 		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="2.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="Tests\DocumentTests.cs" />
+	  <Compile Remove="Tests\GlobalUsings.cs" />
+	  <Compile Remove="Tests\obj\Debug\net8.0\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.GlobalUsings.g.cs" />
+	  <Compile Remove="Tests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+	  <Compile Remove="Tests\obj\Debug\net8.0\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.AssemblyInfo.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_TeqBench.System.Data.NoSql.MongoDB.Models.Tests" />
+	  <None Remove="Tests\obj\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.csproj.nuget.g.props" />
+	  <None Remove="Tests\obj\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.csproj.nuget.g.targets" />
+	  <None Remove="Tests\obj\project.assets.json" />
+	  <None Remove="Tests\obj\project.nuget.cache" />
+	  <None Remove="Tests\obj\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.csproj.nuget.dgspec.json" />
+	  <None Remove="Tests\obj\Debug\net8.0\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.assets.cache" />
+	  <None Remove="Tests\obj\Debug\net8.0\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.csproj.AssemblyReference.cache" />
+	  <None Remove="Tests\obj\Debug\net8.0\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.GeneratedMSBuildEditorConfig.editorconfig" />
+	  <None Remove="Tests\obj\Debug\net8.0\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.AssemblyInfoInputs.cache" />
 	</ItemGroup>
 </Project>
