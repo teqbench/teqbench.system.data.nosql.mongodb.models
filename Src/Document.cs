@@ -51,8 +51,7 @@ namespace TeqBench.System.Data.NoSql.MongoDB.Models
                 // Do a null check on the value before attempting to trim the supplied value.
                 this._id = value?.Trim();
 
-                // If this._id is null or is not a valid Id (i.e. TryParse fails), then 
-                // throw exception
+                // If this._id is not a valid Id (i.e. TryParse fails), then throw exception.
                 if (!ObjectId.TryParse(this._id, out ObjectId objectId))
                 {
                     throw new ArgumentException("Invalid value for Id.");
@@ -67,7 +66,6 @@ namespace TeqBench.System.Data.NoSql.MongoDB.Models
         /// <summary>
         /// Document's creation date/time.
         /// </summary>
-        /// <remarks>If the Id property of the instance is null, then the CreatedAt property is the <code>DateTime.MinValue</code>.</remarks>
         [BsonIgnore]
         [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
         public DateTime CreatedAt { get; private set; }
