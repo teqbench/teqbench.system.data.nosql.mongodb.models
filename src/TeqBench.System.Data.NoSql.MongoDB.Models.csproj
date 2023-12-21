@@ -36,7 +36,7 @@
 		<IsPackable>true</IsPackable>
 		<PackOnBuild>true</PackOnBuild>
 		<NeutralLanguage>en-US</NeutralLanguage>
-		<PackageOutputPath>./bin/$(Configuration)</PackageOutputPath>
+		<PackageOutputPath>../publish</PackageOutputPath>
 		<!-- VersionPrefix will be used by .NET to build the PackageVersion and the InformationalVersion. -->
 		<VersionPrefix>$(Major).$(Minor).$(Patch)</VersionPrefix>
 		<!-- Have to explicitly construct the AssemblyVersion and FileVersion in order to have the build and revision version components included. -->
@@ -58,7 +58,9 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="MongoDB.Bson" Version="2.23.1" />
-		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="2.0.1" />
+		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="2.1.0" />
+		<PackageReference Include="TeqBench.Dev.EditorConfig" Version="3.0.1" />
+		<PackageReference Include="TeqBench.Dev.GitIgnore" Version="1.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Compile Remove="Tests\DocumentTests.cs" />
