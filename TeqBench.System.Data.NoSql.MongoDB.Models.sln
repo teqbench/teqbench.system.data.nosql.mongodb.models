@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeqBench.System.Data.NoSql.MongoDB.Models.Tests", "Tests\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.csproj", "{0B80983B-7664-4907-8E79-AA7CFA8AE32C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeqBench.System.Data.NoSql.MongoDB.Models", "src\TeqBench.System.Data.NoSql.MongoDB.Models.csproj", "{CA3A0C70-2051-4518-AC5E-A01A503C9C39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeqBench.System.Data.NoSql.MongoDB.Models", "Src\TeqBench.System.Data.NoSql.MongoDB.Models.csproj", "{CC45437B-F5EE-4780-87EA-9CBCE2C4175A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeqBench.System.Data.NoSql.MongoDB.Models.Tests", "tests\TeqBench.System.Data.NoSql.MongoDB.Models.Tests.csproj", "{43C5E5CC-6BB6-4AC4-98F4-96213B792AD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B80983B-7664-4907-8E79-AA7CFA8AE32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B80983B-7664-4907-8E79-AA7CFA8AE32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B80983B-7664-4907-8E79-AA7CFA8AE32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B80983B-7664-4907-8E79-AA7CFA8AE32C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC45437B-F5EE-4780-87EA-9CBCE2C4175A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC45437B-F5EE-4780-87EA-9CBCE2C4175A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC45437B-F5EE-4780-87EA-9CBCE2C4175A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC45437B-F5EE-4780-87EA-9CBCE2C4175A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3A0C70-2051-4518-AC5E-A01A503C9C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3A0C70-2051-4518-AC5E-A01A503C9C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3A0C70-2051-4518-AC5E-A01A503C9C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3A0C70-2051-4518-AC5E-A01A503C9C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C5E5CC-6BB6-4AC4-98F4-96213B792AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C5E5CC-6BB6-4AC4-98F4-96213B792AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C5E5CC-6BB6-4AC4-98F4-96213B792AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C5E5CC-6BB6-4AC4-98F4-96213B792AD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
