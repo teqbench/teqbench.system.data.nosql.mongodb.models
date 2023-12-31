@@ -1,5 +1,7 @@
 # System MongoDB Models
 
+![Build Status Badge](.badges/build-status.svg) ![Build Number Badge](.badges/build-number.svg) ![Coverage](.badges/code-coverage.svg)
+
 ## Overview
 Concrete implementation of the base document found in TeqBench.System.Data.NoSql.Models for MongoDB.
 
