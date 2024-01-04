@@ -12,9 +12,10 @@
 		<Description>Concrete implementation of the base document found in TeqBench.System.Data.NoSql.Models for MongoDb. This is it's own solution/project separate from TeqBench.System.Data.NoSql.MongoDB.Repository because there are instances where do want to reference it but without all the related repository implementation; because of this it drives keeping TeqBench.System.Data.NoSql.Models as its own solution/project to keep separate from repository implementation as well.</Description>
 		<RootNamespace>TeqBench.System.Data.NoSql.MongoDB.Models</RootNamespace>
 		<AssemblyName>TeqBench.System.Data.NoSql.MongoDB.Models</AssemblyName>
+		<ReleaseVersion></ReleaseVersion>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="MongoDB.Bson" Version="2.23.1" />
-		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="2.1.0" />
+		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="3.0.0" />
 	</ItemGroup>
 </Project>
