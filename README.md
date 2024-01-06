@@ -30,10 +30,8 @@ Concrete implementation of the base document found in TeqBench.System.Data.NoSql
 > [!NOTE]
 > Referenced/restored via the project file
 
-- MongoDB.Bson, 2.22.0
-- TeqBench.System.Data.NoSql.Models, 2.1.0
-- TeqBench.Dev.EditorConfig, 3.0.1
-- TeqBench.Dev.GitIgnore, 1.0.1
+- MongoDB.Bson, 2.23.1
+- TeqBench.System.Data.NoSql.Models, 3.0.0
 
 ## Usage
 
