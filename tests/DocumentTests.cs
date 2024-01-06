@@ -57,9 +57,8 @@ public class DocumentTests
     [TestMethod, ExpectedException(typeof(ArgumentException))]
     public void TestInvalidIdAssignment() {
         var mock = new Mock<Document>(MockBehavior.Strict);
-        mock.Setup(doc => doc).Throws<ArgumentException>();
+        //mock.Setup(doc => doc).Throws<ArgumentException>();
 
-        IDocument doc = mock.Object;
-        doc.Id = "Invalid Id";
+        mock.Object.Id = "Invalid Id";
     }
 }
