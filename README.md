@@ -9,7 +9,6 @@ Concrete implementation of the base document found in TeqBench.System.Data.NoSql
 ## Contents
 - [Developer Environment Setup](#Developer+Environment+Setup)
 - [Usage](#Usage)
-- [References](#References)
 - [License](#License)
 
 ## Developer Environment Setup
@@ -23,7 +22,8 @@ Concrete implementation of the base document found in TeqBench.System.Data.NoSql
 - [Coding Standards](https://github.com/teqbench/teqbench.docs/wiki/.NET-Coding-Standards)
 - [Solutions](https://github.com/teqbench/teqbench.docs/wiki/.NET-Solutions)
 - [Projects](https://github.com/teqbench/teqbench.docs/wiki/.NET-Projects)
-- [Building, Packing & Deploying](https://github.com/teqbench/teqbench.docs/wiki/.NET-Build-Process)
+- [Building](https://github.com/teqbench/teqbench.docs/wiki/.NET-Build-Process)
+- [Packing & Deploying NuGet Package](#)
 - [Versioning](https://github.com/teqbench/teqbench.docs/wiki/.NET-Versioning-Standards)
 
 ## Usage
