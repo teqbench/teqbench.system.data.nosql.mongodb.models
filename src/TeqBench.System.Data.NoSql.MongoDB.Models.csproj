@@ -15,7 +15,7 @@
 		<ReleaseVersion></ReleaseVersion>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="MongoDB.Bson" Version="2.23.1" />
-		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="3.0.0" />
+		<PackageReference Include="MongoDB.Bson" Version="2.25.0" />
+		<PackageReference Include="TeqBench.System.Data.NoSql.Models" Version="3.1.0" />
 	</ItemGroup>
 </Project>
